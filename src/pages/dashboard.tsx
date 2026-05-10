@@ -1,18 +1,26 @@
-import { Upload04Icon } from "@hugeicons/core-free-icons"
+import {
+  LayerIcon,
+  Route02Icon,
+  Upload04Icon,
+} from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 import { useMemo, useState } from "react"
+import { AllRoutesMap } from "@/components/all-routes-map"
 import { RideMap } from "@/components/ride-map"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import { RideDetail } from "@/features/rides/ride-detail"
 import { RideList } from "@/features/rides/ride-list"
 import { RideStats } from "@/features/rides/ride-stats"
 import { useRidesData } from "@/hooks/use-rides-data"
 import { formatDate } from "@/lib/format"
+import { cn } from "@/lib/utils"
 
 export function Dashboard() {
   const { loadState, activities, summary } = useRidesData()
   const [query, setQuery] = useState("")
   const [selectedId, setSelectedId] = useState<string | null>(null)
+  const [viewMode, setViewMode] = useState<"single" | "overlay">("single")
 
   const filtered = useMemo(() => {
     const normalized = query.trim().toLowerCase()
@@ -45,9 +53,6 @@ export function Dashboard() {
               <h1 className="text-2xl font-semibold tracking-normal">
                 RideLog
               </h1>
-              <p className="text-sm text-muted-foreground">
-                Keep to Strava cycling sync
-              </p>
             </div>
             <Badge
               variant={loadState.status === "ready" ? "default" : "secondary"}
@@ -65,12 +70,45 @@ export function Dashboard() {
             query={query}
             selectedId={selected?.id}
             onQueryChange={setQuery}
-            onSelect={setSelectedId}
+            onSelect={(id) => {
+              setSelectedId(id)
+              setViewMode("single")
+            }}
           />
         </aside>
 
-        <section className="min-h-0 min-w-0">
-          <RideMap activity={selected} className="h-full" />
+        <section className="relative flex min-h-0 min-w-0 flex-col gap-2">
+          <div className="absolute left-3 top-3 z-10 flex items-center gap-1 rounded-md border bg-background/80 p-1 shadow-sm backdrop-blur">
+            <Button
+              variant="ghost"
+              size="icon"
+              className={cn(
+                "h-7 w-7",
+                viewMode === "single" && "bg-accent text-accent-foreground"
+              )}
+              title="Single route"
+              onClick={() => setViewMode("single")}
+            >
+              <HugeiconsIcon icon={Route02Icon} size={16} />
+            </Button>
+            <Button
+              variant="ghost"
+              size="icon"
+              className={cn(
+                "h-7 w-7",
+                viewMode === "overlay" && "bg-accent text-accent-foreground"
+              )}
+              title="All routes overlay"
+              onClick={() => setViewMode("overlay")}
+            >
+              <HugeiconsIcon icon={LayerIcon} size={16} />
+            </Button>
+          </div>
+          {viewMode === "single" ? (
+            <RideMap activity={selected} className="h-full" />
+          ) : (
+            <AllRoutesMap className="h-full" />
+          )}
         </section>
 
         <section className="min-h-0 min-w-0 overflow-auto scrollbar-dark">

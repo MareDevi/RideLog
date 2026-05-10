@@ -84,7 +84,7 @@ This structure is a target, not a requirement for every early commit. Add folder
 - `src/components/ui` contains shadcn/ui and Animate UI generated primitives.
 - Product components compose primitives outside `ui`, grouped under `src/features/`.
 - Feature modules own data loading, filtering, and view composition for one product area.
-- Map rendering is isolated in `src/components/ride-map.tsx`; geometry utilities live in `src/lib/map-geo.ts` so the provider can change later.
+- Map rendering is isolated in `src/components/ride-map.tsx` (single route + replay) and `src/components/all-routes-map.tsx` (all routes overlay); geometry utilities live in `src/lib/map-geo.ts` so the provider can change later.
 - Generated data imports should be typed at the boundary and validated before rendering.
 
 ## Sync Boundaries

@@ -4858,7 +4858,9 @@
   },
   "properties": {
     "activityId": "keep_9223370288246692807",
-    "title": "Ride from Keep"
+    "color": "#ef4444",
+    "title": "Ride from Keep",
+    "year": 2025
   },
   "type": "Feature"
 }

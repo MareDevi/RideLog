@@ -104,9 +104,19 @@ Implemented public data files:
 public/data/
   activities.json
   summary.json
+  all-routes.geojson
   routes/
     <activity-id>.geojson
 ```
+
+`all-routes.geojson` is a GeoJSON `FeatureCollection<LineString>` containing every public (non-private) route in a single file. Each feature carries:
+
+- `activityId`: canonical activity ID.
+- `title`: activity title.
+- `year`: the UTC year of the activity start time.
+- `color`: a per-feature line color (data-driven by the map layer).
+
+Features are sorted by `startTime` ascending (oldest first) so newer routes render on top. This file powers the "all routes overlay" map view and avoids N individual HTTP requests.
 
 `activities.json` should be deterministic:
 

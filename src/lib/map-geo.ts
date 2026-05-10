@@ -43,6 +43,74 @@ export function boundsFromFeature(
   ]
 }
 
+export function boundsFromFeatureCollection(
+  collection: GeoJSON.FeatureCollection<GeoJSON.LineString>
+): [[number, number], [number, number]] | null {
+  const points: [number, number][] = []
+
+  for (const feature of collection.features) {
+    if (feature.geometry.type !== "LineString") continue
+    for (const [lng, lat] of feature.geometry.coordinates) {
+      points.push([lng, lat])
+    }
+  }
+
+  if (points.length === 0) return null
+
+  // Density-aware bounds: focus on the area where most points cluster.
+  // This prevents a few outlier routes (e.g. one ride in a distant city)
+  // from pulling the viewport to the geometric center of everything.
+  const sortedLng = points.map((p) => p[0]).sort((a, b) => a - b)
+  const sortedLat = points.map((p) => p[1]).sort((a, b) => a - b)
+  const medianLng = sortedLng[Math.floor(sortedLng.length / 2)]
+  const medianLat = sortedLat[Math.floor(sortedLat.length / 2)]
+
+  const distances = points
+    .map(([lng, lat]) =>
+      Math.sqrt((lng - medianLng) ** 2 + (lat - medianLat) ** 2)
+    )
+    .sort((a, b) => a - b)
+
+  // Use the 90th percentile distance as a cutoff, with a 1.5x margin
+  // to avoid over-cropping when all routes are in the same region.
+  const cutoffIndex = Math.min(
+    Math.floor(distances.length * 0.9),
+    distances.length - 1
+  )
+  const cutoff = distances[cutoffIndex] ?? distances.at(-1) ?? 0
+  const threshold = Math.max(cutoff * 1.5, 0.001)
+
+  let minLng = Infinity
+  let minLat = Infinity
+  let maxLng = -Infinity
+  let maxLat = -Infinity
+  let kept = 0
+
+  for (const [lng, lat] of points) {
+    const d = Math.sqrt((lng - medianLng) ** 2 + (lat - medianLat) ** 2)
+    if (d <= threshold) {
+      if (lng < minLng) minLng = lng
+      if (lat < minLat) minLat = lat
+      if (lng > maxLng) maxLng = lng
+      if (lat > maxLat) maxLat = lat
+      kept++
+    }
+  }
+
+  // Fallback to all points if the filter was too aggressive.
+  if (kept === 0) {
+    return [
+      [sortedLng[0], sortedLat[0]],
+      [sortedLng.at(-1) ?? sortedLng[0], sortedLat.at(-1) ?? sortedLat[0]],
+    ]
+  }
+
+  return [
+    [minLng, minLat],
+    [maxLng, maxLat],
+  ]
+}
+
 export function buildEndpointData(
   feature: GeoJSON.Feature<GeoJSON.LineString>
 ): GeoJSON.FeatureCollection<GeoJSON.Point> {

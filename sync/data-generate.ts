@@ -34,6 +34,10 @@ export async function generatePublicData() {
   const now = new Date().toISOString()
   const publicActivities: RideActivity[] = []
   const routeFiles: Array<{ id: string; data: unknown }> = []
+  const overlayFeatures: Array<{
+    startTime: string
+    feature: GeoJSON.Feature<GeoJSON.LineString>
+  }> = []
 
   for (const staged of stagedActivities) {
     const stateEntry = state.activities[`keep:${staged.source.activityId}`]
@@ -56,17 +60,25 @@ export async function generatePublicData() {
     publicActivities.push(transformed.activity)
 
     if (transformed.points.length > 0) {
+      const coordinates = coordinatesFromPoints(transformed.points)
+      const feature: GeoJSON.Feature<GeoJSON.LineString> = {
+        type: "Feature",
+        properties: {
+          activityId: staged.id,
+          title: staged.title,
+          year: new Date(staged.startTime).getUTCFullYear(),
+          color: "#ef4444",
+        },
+        geometry: {
+          type: "LineString",
+          coordinates,
+        },
+      }
       routeFiles.push({
         id: staged.id,
-        data: {
-          type: "Feature",
-          properties: { activityId: staged.id, title: staged.title },
-          geometry: {
-            type: "LineString",
-            coordinates: coordinatesFromPoints(transformed.points),
-          },
-        },
+        data: feature,
       })
+      overlayFeatures.push({ startTime: staged.startTime, feature })
     }
   }
 
@@ -90,8 +102,20 @@ export async function generatePublicData() {
   await writeJsonFile(join(PUBLIC_DATA_DIR, "activities.json"), activitiesFile)
   await writeJsonFile(join(PUBLIC_DATA_DIR, "summary.json"), summary)
 
+  overlayFeatures.sort((left, right) =>
+    left.startTime.localeCompare(right.startTime)
+  )
+  const allRoutesGeoJson: GeoJSON.FeatureCollection<GeoJSON.LineString> = {
+    type: "FeatureCollection",
+    features: overlayFeatures.map((item) => item.feature),
+  }
+  await writeJsonFile(
+    join(PUBLIC_DATA_DIR, "all-routes.geojson"),
+    allRoutesGeoJson
+  )
+
   console.log(
-    `Generated ${activitiesFile.activities.length} public activities and ${routeFiles.length} route files`
+    `Generated ${activitiesFile.activities.length} public activities, ${routeFiles.length} route files, and ${overlayFeatures.length} overlay routes`
   )
 }
 
