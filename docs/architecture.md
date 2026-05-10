@@ -20,6 +20,17 @@ Keep export/API
   -> Vite React app
 ```
 
+## Implemented v1
+
+The first runnable pipeline is implemented in TypeScript under `sync/`:
+
+- `sync/adapters/keep.ts` logs in to `api.gotokeep.com`, fetches `outdoorCycling` logs, decodes encrypted `geoPoints`, converts GCJ-02 coordinates to WGS84, and writes canonical staging files.
+- `sync/strava-sync.ts` refreshes Strava OAuth tokens, skips already-uploaded unchanged activities from state, uploads privacy-processed GPX files, and polls upload status.
+- `sync/data-generate.ts` validates staged activities, applies public route privacy, writes `public/data/activities.json`, `public/data/summary.json`, and per-ride GeoJSON route files.
+- `src/lib/ridelog-schema.ts` is the shared Zod contract used by scripts and frontend loading.
+
+The app stays static. The frontend fetches generated JSON at runtime and renders a dashboard, ride list, detail panel, sync state, and MapLibre route map using OpenFreeMap by default.
+
 ## Recommended Repository Shape
 
 ```text
@@ -46,9 +57,14 @@ sync/
   privacy/
   cli/
 data/
-  activities.json
+  private/
+    staging/
+    sync-state.json
+public/
+  data/
+    activities.json
+    summary.json
   routes/
-  sync-state.json
 docs/
   reference/
 ```

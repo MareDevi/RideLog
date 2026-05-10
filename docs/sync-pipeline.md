@@ -12,7 +12,7 @@ This should work locally and in GitHub Actions.
 
 ## Local Flow
 
-Recommended commands once sync tooling exists:
+Implemented commands:
 
 ```bash
 bun run sync:keep -- --dry-run
@@ -23,7 +23,7 @@ bun run data:generate
 bun run build
 ```
 
-The exact script names may change during implementation, but keep the split between import, upload, generation, and build.
+`bun run sync -- --dry-run` runs Keep import, Strava reconciliation, and data generation in order without writing Keep staging files or mutating Strava. `bun run sync` performs the same sequence with real provider writes where credentials are present.
 
 ## GitHub Actions Flow
 
@@ -45,7 +45,9 @@ The job should:
 5. Run Strava reconciliation/upload.
 6. Generate public data.
 7. Run typecheck/build.
-8. Commit changed generated data, or upload it as an artifact depending on the deployment model.
+8. Build the static frontend.
+
+The current `sync.yml` supports scheduled and manual runs. Scheduled runs and manual runs with `dry_run: true` use `bun run sync -- --dry-run`; manual runs with `dry_run: false` use real provider sync. Generated data committing is intentionally left out until a persistence choice is made for private state.
 
 ## Secrets
 
@@ -67,32 +69,32 @@ Recommended non-secret variables:
 - `RIDELOG_PUBLIC_BASE_URL`: deployed site URL.
 - `RIDELOG_PRIVACY_TRIM_START_METERS`: default route start trim.
 - `RIDELOG_PRIVACY_TRIM_END_METERS`: default route end trim.
-- `RIDELOG_STRAVA_DRY_RUN`: default dry-run toggle for CI testing.
+- `RIDELOG_HIDE_ROUTES`: hide all public route geometry and Strava GPX upload geometry.
+- `VITE_MAP_STYLE_URL`: optional frontend map style URL. Defaults to OpenFreeMap bright style.
 
 Frontend-exposed variables must use Vite's `VITE_` prefix and must not contain secrets.
 
 ## Keep Adapter
 
-The Keep adapter should:
+The Keep adapter:
 
 - Authenticate without printing credentials.
-- Fetch only cycling activities for the first release.
-- Download route data when available.
+- Fetches only `outdoorCycling` activities for the first release.
+- Downloads route data when available.
 - Preserve provider IDs and timestamps.
-- Convert provider units into canonical units.
-- Tolerate missing optional fields.
+- Converts Keep route coordinates from GCJ-02 to WGS84.
+- Tolerates missing optional fields.
 
 If Keep access is unstable, support manual export ingestion before adding brittle browser automation.
 
 ## Strava Adapter
 
-The Strava adapter should:
+The Strava adapter:
 
-- Refresh access tokens from the refresh token.
-- Search for existing activities by source ID, timestamp, distance, or previously stored Strava ID.
-- Upload route files only after privacy transforms.
-- Record Strava activity IDs in sync state.
-- Avoid duplicate uploads on repeated runs.
+- Refreshes access tokens from the refresh token.
+- Uses sync state checksums and Strava activity IDs to avoid duplicate uploads.
+- Uploads GPX files only after privacy transforms.
+- Records Strava upload and activity IDs in `data/private/sync-state.json`.
 
 ## Sync State
 
@@ -115,6 +117,14 @@ Recommended private state file:
 ```
 
 Keep private state separate from public frontend data when it contains provider IDs the user does not want to expose.
+
+Private files are ignored by git:
+
+```text
+data/private/sync-state.json
+data/private/staging/*.json
+data/private/staging/*.raw.json
+```
 
 ## Privacy
 

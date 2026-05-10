@@ -128,3 +128,30 @@
     @apply font-sans;
   }
 }
+
+@layer utilities {
+  .scrollbar-dark {
+    scrollbar-color: oklch(0.42 0.006 255) transparent;
+    scrollbar-width: thin;
+  }
+
+  .scrollbar-dark::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scrollbar-dark::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-dark::-webkit-scrollbar-thumb {
+    border: 2px solid transparent;
+    border-radius: 999px;
+    background: oklch(0.42 0.006 255);
+    background-clip: content-box;
+  }
+
+  .scrollbar-dark::-webkit-scrollbar-thumb:hover {
+    background: oklch(0.56 0.008 255);
+    background-clip: content-box;
+  }
+}

@@ -1,0 +1,43 @@
+name: Sync Ride Data
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Run without provider mutations"
+        default: "true"
+        type: choice
+        options: ["true", "false"]
+  schedule:
+    - cron: "15 20 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      KEEP_MOBILE: ${{ secrets.KEEP_MOBILE }}
+      KEEP_PASSWORD: ${{ secrets.KEEP_PASSWORD }}
+      STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
+      STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
+      STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
+      RIDELOG_SYNC_SINCE: ${{ vars.RIDELOG_SYNC_SINCE }}
+      RIDELOG_PRIVACY_TRIM_START_METERS: ${{ vars.RIDELOG_PRIVACY_TRIM_START_METERS }}
+      RIDELOG_PRIVACY_TRIM_END_METERS: ${{ vars.RIDELOG_PRIVACY_TRIM_END_METERS }}
+      RIDELOG_HIDE_ROUTES: ${{ vars.RIDELOG_HIDE_ROUTES }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      - run: bun install --frozen-lockfile
+      - name: Dry-run sync
+        if: github.event_name == 'schedule' || inputs.dry_run == 'true'
+        run: bun run sync -- --dry-run
+      - name: Real sync
+        if: github.event_name == 'workflow_dispatch' && inputs.dry_run == 'false'
+        run: bun run sync
+      - run: bun run typecheck
+      - run: bun run build

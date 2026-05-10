@@ -34,6 +34,8 @@ Avoid heavy page-wide motion. Ride data should remain scannable.
 
 ## Core Screens
 
+The current v1 app implements one static dashboard surface in `src/App.tsx` with a MapLibre map module in `src/components/ride-map.tsx`. It fetches generated JSON from `public/data` at runtime and validates it with the shared Zod schemas before rendering.
+
 ### Dashboard
 
 The dashboard should include:
@@ -77,6 +79,13 @@ Map view should support:
 - route hover and selection.
 - empty state when route data is hidden.
 - mobile-friendly controls.
+
+Current map strategy:
+
+- MapLibre GL JS renders the selected ride route.
+- OpenFreeMap bright style is the default base map.
+- `VITE_MAP_STYLE_URL` can replace the style without code changes.
+- Hidden or missing routes show a non-coordinate empty state while list and stats remain usable.
 
 ## Interaction Rules
 

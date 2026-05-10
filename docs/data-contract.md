@@ -98,16 +98,14 @@ Privacy transforms must run before files are written to public frontend data.
 
 ## Generated Files
 
-Recommended public data files:
+Implemented public data files:
 
 ```text
-data/
+public/data/
   activities.json
-  activities.min.json
   summary.json
   routes/
-    ride_<id>.polyline
-    ride_<id>.geojson
+    <activity-id>.geojson
 ```
 
 `activities.json` should be deterministic:
@@ -126,3 +124,53 @@ Every generated activity should pass validation before replacing public data:
 - Route file references must exist unless `hideRoute` is true.
 - Coordinates must be valid longitude and latitude pairs.
 - Strava destination IDs must only appear after confirmed upload or match.
+
+## Runtime Contract
+
+The canonical schemas live in `src/lib/ridelog-schema.ts` and are validated with Zod before generated files are replaced. Script-only staged data extends `RideActivity` with a private route payload:
+
+```ts
+type StagedActivity = RideActivity & {
+  privateRoute?: {
+    points: RoutePoint[]
+    coordinates: [number, number][]
+    sourceChecksum: string
+    routeChecksum?: string
+  }
+}
+```
+
+`privateRoute` is never written to `public/data`. Route privacy is applied before GeoJSON generation and before Strava GPX upload.
+
+`summary.json` contains deterministic totals plus sync metadata:
+
+```ts
+type Summary = {
+  version: 1
+  generatedAt: string
+  totals: {
+    rides: number
+    distanceMeters: number
+    movingTimeSeconds: number
+    elevationGainMeters: number
+  }
+  years: Array<{
+    year: number
+    rides: number
+    distanceMeters: number
+    movingTimeSeconds: number
+    elevationGainMeters: number
+  }>
+  sync: {
+    lastImportedAt?: string
+    lastSyncedAt?: string
+    source: "keep"
+    destination: "strava"
+    routePrivacy: {
+      hideRoutes: boolean
+      trimStartMeters: number
+      trimEndMeters: number
+    }
+  }
+}
+```

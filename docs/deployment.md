@@ -18,6 +18,14 @@ bun run preview
 
 Vite loads production environment variables from `.env.production` during build. Only variables prefixed with `VITE_` are exposed to frontend code, so secrets must stay in GitHub Actions or server-side sync scripts.
 
+The frontend fetches generated data from:
+
+- `public/data/activities.json`
+- `public/data/summary.json`
+- `public/data/routes/*.geojson`
+
+The optional `VITE_MAP_STYLE_URL` overrides the MapLibre style URL. When unset, the app uses the OpenFreeMap bright style.
+
 ## Vercel
 
 Recommended settings:
@@ -44,11 +52,19 @@ If using Cloudflare Pages with GitHub Actions generated data, trigger deployment
 
 Use separate workflows where possible:
 
-- `ci.yml`: install, lint, typecheck, build.
-- `sync.yml`: scheduled/manual data sync, validation, generated data commit.
+- `ci.yml`: install, lint, typecheck, test, build.
+- `sync.yml`: scheduled/manual data sync, validation, build.
 - `deploy.yml`: optional deployment trigger if not handled by Vercel or Cloudflare Git integration.
 
 Keep sync logs terse. Mask provider tokens and avoid printing full request or response bodies.
+
+Real sync requires these GitHub secrets:
+
+- `KEEP_MOBILE`
+- `KEEP_PASSWORD`
+- `STRAVA_CLIENT_ID`
+- `STRAVA_CLIENT_SECRET`
+- `STRAVA_REFRESH_TOKEN`
 
 ## Static Assets
 
