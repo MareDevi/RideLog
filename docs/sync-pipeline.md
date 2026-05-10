@@ -33,7 +33,7 @@ Use a scheduled workflow plus manual dispatch:
 on:
   workflow_dispatch:
   schedule:
-    - cron: "15 20 * * *"
+    - cron: "0 0,4,10,16 * * *"
 ```
 
 The job should:
@@ -46,8 +46,12 @@ The job should:
 6. Generate public data.
 7. Run typecheck/build.
 8. Build the static frontend.
+9. Commit and push generated data changes back to the repository.
 
-The current `sync.yml` supports scheduled and manual runs. Scheduled runs and manual runs with `dry_run: true` use `bun run sync -- --dry-run`; manual runs with `dry_run: false` use real provider sync. Generated data committing is intentionally left out until a persistence choice is made for private state.
+The current `sync.yml` supports scheduled and manual runs:
+- **Scheduled runs** execute real provider sync and automatically commit/push generated data.
+- **Manual runs** with `dry_run: true` use `bun run sync -- --dry-run` without committing.
+- **Manual runs** with `dry_run: false` use real provider sync and commit/push changes.
 
 ## Secrets
 
