@@ -1,6 +1,6 @@
 import { mkdir, readFile, rename, writeFile } from "node:fs/promises"
 import { dirname } from "node:path"
-import { z } from "zod"
+import type { z } from "zod"
 
 export async function ensureDir(path: string) {
   await mkdir(path, { recursive: true })

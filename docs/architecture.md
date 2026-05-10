@@ -31,6 +31,14 @@ The first runnable pipeline is implemented in TypeScript under `sync/`:
 
 The app stays static. The frontend fetches generated JSON at runtime and renders a dashboard, ride list, detail panel, sync state, and MapLibre route map using OpenFreeMap by default.
 
+The frontend is organized into layered modules:
+
+- `src/pages/` hosts top-level page surfaces (currently `dashboard.tsx`).
+- `src/features/` owns product-area modules: `rides/` contains the list, detail, stats, and replay controls.
+- `src/hooks/` holds reusable data hooks such as `useRidesData` with in-memory caching.
+- `src/lib/` keeps framework-agnostic utilities and the shared Zod schema. Formatting and map-geometry helpers are isolated in `format.ts` and `map-geo.ts`.
+- `src/components/ui/` remains reserved for shadcn/ui and Animate UI primitives.
+
 ## Recommended Repository Shape
 
 ```text
@@ -74,9 +82,9 @@ This structure is a target, not a requirement for every early commit. Add folder
 ## Frontend Boundaries
 
 - `src/components/ui` contains shadcn/ui and Animate UI generated primitives.
-- Product components compose primitives outside `ui`.
+- Product components compose primitives outside `ui`, grouped under `src/features/`.
 - Feature modules own data loading, filtering, and view composition for one product area.
-- Map rendering should be isolated behind a `maps` module so the provider can change later.
+- Map rendering is isolated in `src/components/ride-map.tsx`; geometry utilities live in `src/lib/map-geo.ts` so the provider can change later.
 - Generated data imports should be typed at the boundary and validated before rendering.
 
 ## Sync Boundaries

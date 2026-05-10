@@ -26,6 +26,15 @@ The frontend fetches generated data from:
 
 The optional `VITE_MAP_STYLE_URL` overrides the MapLibre style URL. When unset, the app uses the OpenFreeMap bright style.
 
+## Build Optimizations
+
+Vite is configured with `manualChunks` to split heavy dependencies:
+
+- `maplibre-gl` and `react-map-gl` are bundled into a separate `map` chunk so the initial JS payload stays small.
+- The build target is set to `es2022` for modern browsers.
+
+The app uses a system font stack (`-apple-system`, `BlinkMacSystemFont`, `Segoe UI`, `PingFang SC`, `Hiragino Sans GB`, `Microsoft YaHei`) so no custom font files are shipped. This eliminates ~460 KB of unused font payload and lets the OS render text with its native typeface.
+
 ## Vercel
 
 Recommended settings:

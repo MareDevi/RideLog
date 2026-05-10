@@ -34,7 +34,16 @@ Avoid heavy page-wide motion. Ride data should remain scannable.
 
 ## Core Screens
 
-The current v1 app implements one static dashboard surface in `src/App.tsx` with a MapLibre map module in `src/components/ride-map.tsx`. It fetches generated JSON from `public/data` at runtime and validates it with the shared Zod schemas before rendering.
+The current v1 app implements one static dashboard surface in `src/pages/dashboard.tsx`, composed from feature modules under `src/features/rides/` and a MapLibre map module in `src/components/ride-map.tsx`. It fetches generated JSON from `public/data` at runtime and validates it with the shared Zod schemas before rendering.
+
+Component boundaries:
+
+- `src/pages/dashboard.tsx` is the page shell; it wires data from `useRidesData` and delegates rendering to feature components.
+- `src/features/rides/ride-list.tsx` renders the searchable activity list. List items are memoized with `React.memo` to avoid unnecessary re-renders during filtering.
+- `src/features/rides/ride-detail.tsx` shows the selected ride's stats, metadata, and Strava link.
+- `src/features/rides/ride-stats.tsx` renders the top-level summary cards.
+- `src/features/rides/replay-controls.tsx` isolates the map replay toolbar UI.
+- `src/components/ride-map.tsx` handles map lifecycle, route loading, and replay animation state. Geometry utilities are kept in `src/lib/map-geo.ts`.
 
 ### Dashboard
 

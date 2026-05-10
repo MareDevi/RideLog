@@ -11,7 +11,7 @@
   },
   "linter": {
     "enabled": true,
-    "rules": { "recommended": false },
+    "rules": { "recommended": true },
     "includes": ["**", "!dist"]
   },
   "javascript": {
@@ -189,6 +189,16 @@
             "noNamespace": "error",
             "useArrayLiterals": "error",
             "useAsConstAssertion": "error"
+          }
+        }
+      }
+    },
+    {
+      "includes": ["src/components/ui/slider.tsx"],
+      "linter": {
+        "rules": {
+          "suspicious": {
+            "noArrayIndexKey": "off"
           }
         }
       }
