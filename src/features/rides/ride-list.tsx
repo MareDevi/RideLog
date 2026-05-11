@@ -6,9 +6,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { formatDate, formatDistance } from "@/lib/format"
 import type { RideActivity } from "@/lib/ridelog-schema"
+import { cn } from "@/lib/utils"
 
 type RideListProps = {
   activities: RideActivity[]
+  className?: string
   query: string
   selectedId: string | undefined
   onQueryChange: (value: string) => void
@@ -17,13 +19,14 @@ type RideListProps = {
 
 export function RideList({
   activities,
+  className,
   query,
   selectedId,
   onQueryChange,
   onSelect,
 }: RideListProps) {
   return (
-    <Card className="flex min-h-0 flex-1 flex-col rounded-md">
+    <Card className={cn("flex min-h-0 flex-1 flex-col rounded-md", className)}>
       <CardHeader className="gap-3">
         <CardTitle className="flex items-center justify-between text-base">
           Rides

@@ -1,6 +1,6 @@
 import "maplibre-gl/dist/maplibre-gl.css"
 
-import { useEffect, useMemo, useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import ReactMap, {
   Layer,
   type LineLayerSpecification,
@@ -8,11 +8,9 @@ import ReactMap, {
   NavigationControl,
   Source,
 } from "react-map-gl/maplibre"
+import { useMapStyleUrl } from "@/hooks/use-map-style"
 import { boundsFromFeatureCollection } from "@/lib/map-geo"
 import { cn } from "@/lib/utils"
-
-const DEFAULT_STYLE_URL =
-  "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
 
 const allRoutesLayer: LineLayerSpecification = {
   id: "all-routes-line",
@@ -39,11 +37,7 @@ export function AllRoutesMap({ className }: AllRoutesMapProps) {
   const [geoData, setGeoData] =
     useState<GeoJSON.FeatureCollection<GeoJSON.LineString> | null>(null)
   const [message, setMessage] = useState<string | null>("Loading routes…")
-
-  const styleUrl = useMemo(
-    () => import.meta.env.VITE_MAP_STYLE_URL || DEFAULT_STYLE_URL,
-    []
-  )
+  const styleUrl = useMapStyleUrl()
 
   useEffect(() => {
     let cancelled = false
@@ -99,7 +93,7 @@ export function AllRoutesMap({ className }: AllRoutesMapProps) {
   return (
     <div
       className={cn(
-        "relative min-h-[420px] overflow-hidden rounded-md border bg-[#111]",
+        "relative min-h-[420px] overflow-hidden rounded-md border bg-muted",
         className
       )}
     >

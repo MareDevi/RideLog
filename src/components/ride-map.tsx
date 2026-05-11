@@ -10,6 +10,7 @@ import ReactMap, {
   Source,
 } from "react-map-gl/maplibre"
 import { ReplayControls } from "@/features/rides/replay-controls"
+import { useMapStyleUrl } from "@/hooks/use-map-style"
 import {
   boundsFromFeature,
   buildEndpointData,
@@ -20,9 +21,6 @@ import {
 } from "@/lib/map-geo"
 import type { RideActivity } from "@/lib/ridelog-schema"
 import { cn } from "@/lib/utils"
-
-const DEFAULT_STYLE_URL =
-  "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
 
 const BASE_REPLAY_DURATION_MS = 15000
 
@@ -145,10 +143,7 @@ export function RideMap({ activity, className }: RideMapProps) {
   const routeHref = activity?.route?.isPrivate
     ? undefined
     : activity?.route?.href
-  const styleUrl = useMemo(
-    () => import.meta.env.VITE_MAP_STYLE_URL || DEFAULT_STYLE_URL,
-    []
-  )
+  const styleUrl = useMapStyleUrl()
   const endpointData = useMemo(
     () =>
       routeFeature ? buildEndpointData(routeFeature) : emptyFeatureCollection(),
@@ -300,7 +295,7 @@ export function RideMap({ activity, className }: RideMapProps) {
   return (
     <div
       className={cn(
-        "relative min-h-[420px] overflow-hidden rounded-md border bg-[#111]",
+        "relative min-h-[420px] overflow-hidden rounded-md border bg-muted",
         className
       )}
     >
