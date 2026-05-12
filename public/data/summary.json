@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-12T05:18:08.929Z",
+  "generatedAt": "2026-05-12T10:52:54.192Z",
   "sync": {
     "destination": "strava",
-    "lastImportedAt": "2026-05-12T05:15:46.199Z",
-    "lastSyncedAt": "2026-05-12T05:18:08.673Z",
+    "lastImportedAt": "2026-05-12T10:50:27.833Z",
+    "lastSyncedAt": "2026-05-12T10:52:53.914Z",
     "routePrivacy": {
       "hideRoutes": false,
       "trimEndMeters": 0,
@@ -12,18 +12,18 @@
     "source": "keep"
   },
   "totals": {
-    "distanceMeters": 665230,
+    "distanceMeters": 670840,
     "elevationGainMeters": 0,
-    "movingTimeSeconds": 131992,
-    "rides": 42
+    "movingTimeSeconds": 133308,
+    "rides": 43
   },
   "version": 1,
   "years": [
     {
-      "distanceMeters": 31330,
+      "distanceMeters": 36940,
       "elevationGainMeters": 0,
-      "movingTimeSeconds": 6738,
-      "rides": 5,
+      "movingTimeSeconds": 8054,
+      "rides": 6,
       "year": 2026
     },
     {
