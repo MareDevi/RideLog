@@ -8,7 +8,7 @@
         {
           "activityId": "18514960281",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:37:42.883Z",
+          "syncedAt": "2026-05-16T00:39:00.862Z",
           "url": "https://www.strava.com/activities/18514960281"
         }
       ],
@@ -22,7 +22,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1261,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -50,14 +50,14 @@
       "source": {
         "activityId": "9223370258014061807",
         "checksum": "sha256:b2a8b753153a3466748d855a4c2402e2dd8c4eeb5e2221d3c51ae2c4c63af4b2",
-        "importedAt": "2026-05-15T16:37:18.584Z",
+        "importedAt": "2026-05-16T00:38:38.964Z",
         "provider": "keep"
       },
       "startTime": "2026-05-15T10:03:29.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:18.584Z"
+      "updatedAt": "2026-05-16T00:38:38.964Z"
     },
     {
       "averageSpeedMps": 4.281072298943948,
@@ -67,7 +67,7 @@
         {
           "activityId": "18506497317",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:37:46.200Z",
+          "syncedAt": "2026-05-16T00:39:04.286Z",
           "url": "https://www.strava.com/activities/18506497317"
         }
       ],
@@ -81,7 +81,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1231,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -109,14 +109,14 @@
       "source": {
         "activityId": "9223370258097522807",
         "checksum": "sha256:9b019b9d226c112c3abf444429b1ccee7b349800bd47762cc26da81338cee7e8",
-        "importedAt": "2026-05-15T16:37:19.000Z",
+        "importedAt": "2026-05-16T00:38:39.315Z",
         "provider": "keep"
       },
       "startTime": "2026-05-14T10:53:02.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:19.000Z"
+      "updatedAt": "2026-05-16T00:38:39.315Z"
     },
     {
       "averageSpeedMps": 4.301075268817204,
@@ -126,7 +126,7 @@
         {
           "activityId": "18488919312",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:37:49.463Z",
+          "syncedAt": "2026-05-16T00:39:07.715Z",
           "url": "https://www.strava.com/activities/18488919312"
         }
       ],
@@ -140,7 +140,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1209,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -168,14 +168,14 @@
       "source": {
         "activityId": "9223370258186458807",
         "checksum": "sha256:26c28e1ff567c188ead35e180e166e88076361cf51b86610f4b19d985bd5f5ef",
-        "importedAt": "2026-05-15T16:37:19.400Z",
+        "importedAt": "2026-05-16T00:38:39.658Z",
         "provider": "keep"
       },
       "startTime": "2026-05-13T10:11:19.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:19.400Z"
+      "updatedAt": "2026-05-16T00:38:39.658Z"
     },
     {
       "averageSpeedMps": 4.262917933130699,
@@ -185,7 +185,7 @@
         {
           "activityId": "18475070508",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:37:52.750Z",
+          "syncedAt": "2026-05-16T00:39:11.225Z",
           "url": "https://www.strava.com/activities/18475070508"
         }
       ],
@@ -199,7 +199,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1316,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -227,14 +227,14 @@
       "source": {
         "activityId": "9223370258274713807",
         "checksum": "sha256:e3b3905ec0a9761696b69b7e31928e55bccfa1aac8b8ca7bdd3fc3271fe9f1ac",
-        "importedAt": "2026-05-15T16:37:19.791Z",
+        "importedAt": "2026-05-16T00:38:39.984Z",
         "provider": "keep"
       },
       "startTime": "2026-05-12T09:38:33.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:19.791Z"
+      "updatedAt": "2026-05-16T00:38:39.984Z"
     },
     {
       "averageSpeedMps": 3.8472942920681987,
@@ -244,7 +244,7 @@
         {
           "activityId": "18466082478",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:37:56.007Z",
+          "syncedAt": "2026-05-16T00:39:14.724Z",
           "url": "https://www.strava.com/activities/18466082478"
         }
       ],
@@ -258,7 +258,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1349,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -286,14 +286,14 @@
       "source": {
         "activityId": "9223370258354795807",
         "checksum": "sha256:0f59cd8d5163cdd6f411a5b2f6c179e17c1674959da768872b303a358088fc0e",
-        "importedAt": "2026-05-15T16:37:20.190Z",
+        "importedAt": "2026-05-16T00:38:40.322Z",
         "provider": "keep"
       },
       "startTime": "2026-05-11T11:18:35.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:20.190Z"
+      "updatedAt": "2026-05-16T00:38:40.322Z"
     },
     {
       "averageSpeedMps": 5.429769392033543,
@@ -303,7 +303,7 @@
         {
           "activityId": "18450301853",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:37:59.277Z",
+          "syncedAt": "2026-05-16T00:39:18.170Z",
           "url": "https://www.strava.com/activities/18450301853"
         }
       ],
@@ -317,7 +317,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1431,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -345,14 +345,14 @@
       "source": {
         "activityId": "9223370258457291807",
         "checksum": "sha256:1d46122a83dc1375f0cf16bd2fd75daa0dfea48820858fdd6405db54655d5831",
-        "importedAt": "2026-05-15T16:37:20.595Z",
+        "importedAt": "2026-05-16T00:38:40.625Z",
         "provider": "keep"
       },
       "startTime": "2026-05-10T06:50:06.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:20.595Z"
+      "updatedAt": "2026-05-16T00:38:40.625Z"
     },
     {
       "averageSpeedMps": 5.481798715203426,
@@ -362,7 +362,7 @@
         {
           "activityId": "18450303055",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:38:02.493Z",
+          "syncedAt": "2026-05-16T00:39:21.656Z",
           "url": "https://www.strava.com/activities/18450303055"
         }
       ],
@@ -376,7 +376,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1401,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -404,14 +404,14 @@
       "source": {
         "activityId": "9223370258460098807",
         "checksum": "sha256:a1eb3a6f2614276357dd8e27d1a0bc10a20e473fdf8e2e7e232479aef5ca7a12",
-        "importedAt": "2026-05-15T16:37:20.994Z",
+        "importedAt": "2026-05-16T00:38:40.971Z",
         "provider": "keep"
       },
       "startTime": "2026-05-10T06:04:23.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:20.994Z"
+      "updatedAt": "2026-05-16T00:38:40.971Z"
     },
     {
       "averageSpeedMps": 4.038155802861685,
@@ -421,7 +421,7 @@
         {
           "activityId": "18450304105",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:38:06.000Z",
+          "syncedAt": "2026-05-16T00:39:25.098Z",
           "url": "https://www.strava.com/activities/18450304105"
         }
       ],
@@ -435,7 +435,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1258,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -463,14 +463,14 @@
       "source": {
         "activityId": "9223370260859523807",
         "checksum": "sha256:e748f1987f5a622f5aa9455d6c68b49b96d197b45fb2e841d772c521d9105aaa",
-        "importedAt": "2026-05-15T16:37:21.372Z",
+        "importedAt": "2026-05-16T00:38:41.308Z",
         "provider": "keep"
       },
       "startTime": "2026-04-12T11:36:20.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:21.372Z"
+      "updatedAt": "2026-05-16T00:38:41.308Z"
     },
     {
       "averageSpeedMps": 4.318706697459584,
@@ -480,7 +480,7 @@
         {
           "activityId": "18450305032",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:38:09.254Z",
+          "syncedAt": "2026-05-16T00:39:28.543Z",
           "url": "https://www.strava.com/activities/18450305032"
         }
       ],
@@ -494,7 +494,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1299,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -522,14 +522,14 @@
       "source": {
         "activityId": "9223370260943543807",
         "checksum": "sha256:b04a82e5a5576c52de809af1b7daccfa7fce2a9ffa941bc6d958b7716bd919b7",
-        "importedAt": "2026-05-15T16:37:21.782Z",
+        "importedAt": "2026-05-16T00:38:41.646Z",
         "provider": "keep"
       },
       "startTime": "2026-04-11T12:18:40.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:21.782Z"
+      "updatedAt": "2026-05-16T00:38:41.646Z"
     },
     {
       "averageSpeedMps": 5.5122273628552545,
@@ -539,7 +539,7 @@
         {
           "activityId": "14721185470",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:38:12.534Z",
+          "syncedAt": "2026-05-16T00:39:32.088Z",
           "url": "https://www.strava.com/activities/14721185470"
         }
       ],
@@ -553,7 +553,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1513,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -581,14 +581,14 @@
       "source": {
         "activityId": "9223370287572050807",
         "checksum": "sha256:63d5778f2298ed7c6a491834e0d3771b4278dbf19acaec2f29047c5663cc4887",
-        "importedAt": "2026-05-15T16:37:22.160Z",
+        "importedAt": "2026-05-16T00:38:41.984Z",
         "provider": "keep"
       },
       "startTime": "2025-06-07T07:22:26.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:22.160Z"
+      "updatedAt": "2026-05-16T00:38:41.984Z"
     },
     {
       "averageSpeedMps": 5.417439703153989,
@@ -598,7 +598,7 @@
         {
           "activityId": "14708475092",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:38:15.793Z",
+          "syncedAt": "2026-05-16T00:39:35.607Z",
           "url": "https://www.strava.com/activities/14708475092"
         }
       ],
@@ -612,7 +612,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1617,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -639,15 +639,15 @@
       },
       "source": {
         "activityId": "9223370287723955807",
-        "checksum": "sha256:292c59da046f7f974a9b340063b63eb3b0d31549068490cff41c3f58c7601323",
-        "importedAt": "2026-05-15T16:37:22.566Z",
+        "checksum": "sha256:9d5ed5a755f68d6605f6d09a71631d52607050ee9cb1e88a9bc0e1b1cc2ce199",
+        "importedAt": "2026-05-16T00:38:42.335Z",
         "provider": "keep"
       },
       "startTime": "2025-06-05T13:12:17.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:22.566Z"
+      "updatedAt": "2026-05-16T00:38:42.335Z"
     },
     {
       "averageSpeedMps": 4.273719563392108,
@@ -657,7 +657,7 @@
         {
           "activityId": "14667110660",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:38:19.062Z",
+          "syncedAt": "2026-05-16T00:39:39.149Z",
           "url": "https://www.strava.com/activities/14667110660"
         }
       ],
@@ -671,7 +671,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1191,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -699,14 +699,14 @@
       "source": {
         "activityId": "9223370288077111807",
         "checksum": "sha256:56be080112bc4aafd685fbbd1f7e2c1eee52835d286ae51b6d249f975e2e2082",
-        "importedAt": "2026-05-15T16:37:22.969Z",
+        "importedAt": "2026-05-16T00:38:42.677Z",
         "provider": "keep"
       },
       "startTime": "2025-06-01T11:14:25.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:22.969Z"
+      "updatedAt": "2026-05-16T00:38:42.677Z"
     },
     {
       "averageSpeedMps": 4.344262295081967,
@@ -716,7 +716,7 @@
         {
           "activityId": "14645186673",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:38:22.343Z",
+          "syncedAt": "2026-05-16T00:39:42.764Z",
           "url": "https://www.strava.com/activities/14645186673"
         }
       ],
@@ -730,7 +730,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1220,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -757,15 +757,15 @@
       },
       "source": {
         "activityId": "9223370288246692807",
-        "checksum": "sha256:3237180a3c69d33d6bc9b46c233d0de2b7e4f45f005ec847a79ca48609a6617d",
-        "importedAt": "2026-05-15T16:37:23.345Z",
+        "checksum": "sha256:a0cc0e07484b7cfdb90495915ab54d5e0c0b8dbfba2ae43c5cd224566f321d22",
+        "importedAt": "2026-05-16T00:38:43.017Z",
         "provider": "keep"
       },
       "startTime": "2025-05-30T12:06:58.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:23.345Z"
+      "updatedAt": "2026-05-16T00:38:43.017Z"
     },
     {
       "averageSpeedMps": 4.108527131782946,
@@ -775,7 +775,7 @@
         {
           "activityId": "14635392839",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:38:25.626Z",
+          "syncedAt": "2026-05-16T00:39:46.321Z",
           "url": "https://www.strava.com/activities/14635392839"
         }
       ],
@@ -789,7 +789,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1290,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -817,14 +817,14 @@
       "source": {
         "activityId": "9223370288327793807",
         "checksum": "sha256:a631db8fc0bee448b26e6aa2699f59a3b65c8a87a7db0f61845e28eb4bc20fee",
-        "importedAt": "2026-05-15T16:37:23.713Z",
+        "importedAt": "2026-05-16T00:38:43.345Z",
         "provider": "keep"
       },
       "startTime": "2025-05-29T13:34:29.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:23.713Z"
+      "updatedAt": "2026-05-16T00:38:43.345Z"
     },
     {
       "averageSpeedMps": 3.8222222222222224,
@@ -834,7 +834,7 @@
         {
           "activityId": "14624873121",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:38:28.872Z",
+          "syncedAt": "2026-05-16T00:39:49.922Z",
           "url": "https://www.strava.com/activities/14624873121"
         }
       ],
@@ -848,7 +848,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1575,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -876,14 +876,14 @@
       "source": {
         "activityId": "9223370288411976807",
         "checksum": "sha256:e72f0a42a60062b6c5b1f0d480e575291b7dcbb9810d9cb51ddb71660de33642",
-        "importedAt": "2026-05-15T16:37:24.106Z",
+        "importedAt": "2026-05-16T00:38:43.676Z",
         "provider": "keep"
       },
       "startTime": "2025-05-28T13:44:30.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:24.106Z"
+      "updatedAt": "2026-05-16T00:38:43.676Z"
     },
     {
       "averageSpeedMps": 4.117205108940646,
@@ -893,7 +893,7 @@
         {
           "activityId": "14610559151",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:38:32.107Z",
+          "syncedAt": "2026-05-16T00:39:53.496Z",
           "url": "https://www.strava.com/activities/14610559151"
         }
       ],
@@ -907,7 +907,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1331,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -935,14 +935,14 @@
       "source": {
         "activityId": "9223370288500379807",
         "checksum": "sha256:24b2e86da1d98d4625bd28d80ac7d6e1409008c88a6b50ad675c95608a941c34",
-        "importedAt": "2026-05-15T16:37:24.497Z",
+        "importedAt": "2026-05-16T00:38:44.012Z",
         "provider": "keep"
       },
       "startTime": "2025-05-27T13:37:27.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:24.497Z"
+      "updatedAt": "2026-05-16T00:38:44.012Z"
     },
     {
       "averageSpeedMps": 4.1946034341782505,
@@ -952,7 +952,7 @@
         {
           "activityId": "14601893945",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:38:35.384Z",
+          "syncedAt": "2026-05-16T00:39:57.104Z",
           "url": "https://www.strava.com/activities/14601893945"
         }
       ],
@@ -966,7 +966,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1223,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -994,14 +994,14 @@
       "source": {
         "activityId": "9223370288599083807",
         "checksum": "sha256:27121f56981c94594d68633b00d89fbf7be22559b7edc18a0760ec910d66bb67",
-        "importedAt": "2026-05-15T16:37:24.871Z",
+        "importedAt": "2026-05-16T00:38:44.362Z",
         "provider": "keep"
       },
       "startTime": "2025-05-26T10:14:22.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:24.871Z"
+      "updatedAt": "2026-05-16T00:38:44.362Z"
     },
     {
       "averageSpeedMps": 3.5734265734265733,
@@ -1011,7 +1011,7 @@
         {
           "activityId": "14587520847",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:38:38.646Z",
+          "syncedAt": "2026-05-16T00:40:00.563Z",
           "url": "https://www.strava.com/activities/14587520847"
         }
       ],
@@ -1025,7 +1025,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1430,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -1053,14 +1053,14 @@
       "source": {
         "activityId": "9223370288693270807",
         "checksum": "sha256:dc5602e1ecb89573704438158544e16c7209191ae6a9826105b34078f226a0d6",
-        "importedAt": "2026-05-15T16:37:25.256Z",
+        "importedAt": "2026-05-16T00:38:44.705Z",
         "provider": "keep"
       },
       "startTime": "2025-05-25T08:01:11.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:25.256Z"
+      "updatedAt": "2026-05-16T00:38:44.705Z"
     },
     {
       "averageSpeedMps": 4.3074324324324325,
@@ -1070,7 +1070,7 @@
         {
           "activityId": "14578715449",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:38:41.908Z",
+          "syncedAt": "2026-05-16T00:40:03.998Z",
           "url": "https://www.strava.com/activities/14578715449"
         }
       ],
@@ -1084,7 +1084,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1184,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -1112,14 +1112,14 @@
       "source": {
         "activityId": "9223370288771745807",
         "checksum": "sha256:a1ab4be147670146d7252dd8172133a625a51e17f6ab4d4c32d4c285c16c4961",
-        "importedAt": "2026-05-15T16:37:25.642Z",
+        "importedAt": "2026-05-16T00:38:45.043Z",
         "provider": "keep"
       },
       "startTime": "2025-05-24T10:17:18.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:25.642Z"
+      "updatedAt": "2026-05-16T00:38:45.043Z"
     },
     {
       "averageSpeedMps": 4.398340248962656,
@@ -1129,7 +1129,7 @@
         {
           "activityId": "14567385514",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:38:45.144Z",
+          "syncedAt": "2026-05-16T00:40:07.447Z",
           "url": "https://www.strava.com/activities/14567385514"
         }
       ],
@@ -1143,7 +1143,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1205,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -1171,14 +1171,14 @@
       "source": {
         "activityId": "9223370288871703807",
         "checksum": "sha256:540c03695b562ae7c88274522dec8e81db359e4aa4a237249681a51abc8e0419",
-        "importedAt": "2026-05-15T16:37:26.010Z",
+        "importedAt": "2026-05-16T00:38:45.379Z",
         "provider": "keep"
       },
       "startTime": "2025-05-23T06:31:00.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:26.010Z"
+      "updatedAt": "2026-05-16T00:38:45.379Z"
     },
     {
       "averageSpeedMps": 3.7264833574529668,
@@ -1188,7 +1188,7 @@
         {
           "activityId": "14560833182",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:38:48.377Z",
+          "syncedAt": "2026-05-16T00:40:10.904Z",
           "url": "https://www.strava.com/activities/14560833182"
         }
       ],
@@ -1202,7 +1202,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1382,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -1230,14 +1230,14 @@
       "source": {
         "activityId": "9223370288932682807",
         "checksum": "sha256:8b228b45533944956098fbdb68aef2826139eefcb27e1ed1940f756e01d4f517",
-        "importedAt": "2026-05-15T16:37:26.414Z",
+        "importedAt": "2026-05-16T00:38:45.694Z",
         "provider": "keep"
       },
       "startTime": "2025-05-22T13:31:05.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:26.414Z"
+      "updatedAt": "2026-05-16T00:38:45.694Z"
     },
     {
       "averageSpeedMps": 4.049079754601227,
@@ -1247,7 +1247,7 @@
         {
           "activityId": "14549660382",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:38:51.655Z",
+          "syncedAt": "2026-05-16T00:40:14.448Z",
           "url": "https://www.strava.com/activities/14549660382"
         }
       ],
@@ -1261,7 +1261,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1304,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -1289,14 +1289,14 @@
       "source": {
         "activityId": "9223370289029104807",
         "checksum": "sha256:cf4fcff83900d61cace51b952323ff144085b3e66781990479413b23c77e7627",
-        "importedAt": "2026-05-15T16:37:26.833Z",
+        "importedAt": "2026-05-16T00:38:46.023Z",
         "provider": "keep"
       },
       "startTime": "2025-05-21T10:45:58.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:26.833Z"
+      "updatedAt": "2026-05-16T00:38:46.023Z"
     },
     {
       "averageSpeedMps": 4.035769828926905,
@@ -1306,7 +1306,7 @@
         {
           "activityId": "14544359148",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:38:54.920Z",
+          "syncedAt": "2026-05-16T00:40:17.898Z",
           "url": "https://www.strava.com/activities/14544359148"
         }
       ],
@@ -1320,7 +1320,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1286,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -1348,14 +1348,14 @@
       "source": {
         "activityId": "9223370289119038807",
         "checksum": "sha256:1b4500c200af5dc0731028c730c3cbba7dff51652dea6f2dcc61bdd2b2823a68",
-        "importedAt": "2026-05-15T16:37:27.215Z",
+        "importedAt": "2026-05-16T00:38:46.353Z",
         "provider": "keep"
       },
       "startTime": "2025-05-20T09:47:19.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:27.215Z"
+      "updatedAt": "2026-05-16T00:38:46.353Z"
     },
     {
       "averageSpeedMps": 4.10738255033557,
@@ -1365,7 +1365,7 @@
         {
           "activityId": "14533277190",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:38:58.183Z",
+          "syncedAt": "2026-05-16T00:40:21.350Z",
           "url": "https://www.strava.com/activities/14533277190"
         }
       ],
@@ -1379,7 +1379,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1490,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -1407,14 +1407,14 @@
       "source": {
         "activityId": "9223370289205111807",
         "checksum": "sha256:d0375af93ff8322c5ec67f8efc4a4552a8eeca51b07ba94490c39b003b8fdfb1",
-        "importedAt": "2026-05-15T16:37:27.638Z",
+        "importedAt": "2026-05-16T00:38:46.692Z",
         "provider": "keep"
       },
       "startTime": "2025-05-19T09:49:30.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:27.638Z"
+      "updatedAt": "2026-05-16T00:38:46.692Z"
     },
     {
       "averageSpeedMps": 3.927536231884058,
@@ -1424,7 +1424,7 @@
         {
           "activityId": "14515935817",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:39:01.432Z",
+          "syncedAt": "2026-05-16T00:40:24.771Z",
           "url": "https://www.strava.com/activities/14515935817"
         }
       ],
@@ -1438,7 +1438,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1380,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -1466,14 +1466,14 @@
       "source": {
         "activityId": "9223370289300917807",
         "checksum": "sha256:fadd455192e0a2e29167446ae37922f04d55100652f4fe2ade4d81e48442ab30",
-        "importedAt": "2026-05-15T16:37:28.027Z",
+        "importedAt": "2026-05-16T00:38:47.018Z",
         "provider": "keep"
       },
       "startTime": "2025-05-18T07:12:02.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:28.027Z"
+      "updatedAt": "2026-05-16T00:38:47.018Z"
     },
     {
       "averageSpeedMps": 4.315159574468085,
@@ -1483,7 +1483,7 @@
         {
           "activityId": "14512434311",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:39:04.701Z",
+          "syncedAt": "2026-05-16T00:40:28.234Z",
           "url": "https://www.strava.com/activities/14512434311"
         }
       ],
@@ -1497,7 +1497,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1504,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -1525,14 +1525,14 @@
       "source": {
         "activityId": "9223370289381349807",
         "checksum": "sha256:f414a283064272ade0c548d21e094b070014dd37eef23e6e21de5f3569ba6c43",
-        "importedAt": "2026-05-15T16:37:28.414Z",
+        "importedAt": "2026-05-16T00:38:47.345Z",
         "provider": "keep"
       },
       "startTime": "2025-05-17T08:48:55.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:28.414Z"
+      "updatedAt": "2026-05-16T00:38:47.345Z"
     },
     {
       "averageSpeedMps": 4.663551401869159,
@@ -1542,7 +1542,7 @@
         {
           "activityId": "14496285512",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:39:07.985Z",
+          "syncedAt": "2026-05-16T00:40:31.680Z",
           "url": "https://www.strava.com/activities/14496285512"
         }
       ],
@@ -1556,7 +1556,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 2140,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -1584,14 +1584,14 @@
       "source": {
         "activityId": "9223370289468110807",
         "checksum": "sha256:c24b1a1c3ae86811486cb2bc22a1757343a050cd9d3480dc06aa4245af9c4d43",
-        "importedAt": "2026-05-15T16:37:28.810Z",
+        "importedAt": "2026-05-16T00:38:47.686Z",
         "provider": "keep"
       },
       "startTime": "2025-05-16T08:24:44.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:28.810Z"
+      "updatedAt": "2026-05-16T00:38:47.686Z"
     },
     {
       "averageSpeedMps": 4.320610687022901,
@@ -1601,7 +1601,7 @@
         {
           "activityId": "14492737317",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:39:11.248Z",
+          "syncedAt": "2026-05-16T00:40:35.120Z",
           "url": "https://www.strava.com/activities/14492737317"
         }
       ],
@@ -1615,7 +1615,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1310,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -1643,14 +1643,14 @@
       "source": {
         "activityId": "9223370289551477807",
         "checksum": "sha256:c40eaefe352a03ef5862f4748747845f4a68f40316a6649dd31867845d43ff1c",
-        "importedAt": "2026-05-15T16:37:29.210Z",
+        "importedAt": "2026-05-16T00:38:48.032Z",
         "provider": "keep"
       },
       "startTime": "2025-05-15T09:39:03.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:29.210Z"
+      "updatedAt": "2026-05-16T00:38:48.032Z"
     },
     {
       "averageSpeedMps": 3.913658881811748,
@@ -1660,7 +1660,7 @@
         {
           "activityId": "14482563852",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:39:14.548Z",
+          "syncedAt": "2026-05-16T00:40:38.528Z",
           "url": "https://www.strava.com/activities/14482563852"
         }
       ],
@@ -1674,7 +1674,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1413,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -1702,14 +1702,14 @@
       "source": {
         "activityId": "9223370289631751807",
         "checksum": "sha256:30c48bd7fc20ef62471e4a91231dace9bcb44a945455296f5ba42c2c1972a46a",
-        "importedAt": "2026-05-15T16:37:29.588Z",
+        "importedAt": "2026-05-16T00:38:48.360Z",
         "provider": "keep"
       },
       "startTime": "2025-05-14T11:17:53.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:29.588Z"
+      "updatedAt": "2026-05-16T00:38:48.360Z"
     },
     {
       "averageSpeedMps": 3.9221556886227544,
@@ -1719,7 +1719,7 @@
         {
           "activityId": "14460409625",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:39:17.818Z",
+          "syncedAt": "2026-05-16T00:40:41.972Z",
           "url": "https://www.strava.com/activities/14460409625"
         }
       ],
@@ -1733,7 +1733,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1336,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -1761,14 +1761,14 @@
       "source": {
         "activityId": "9223370289805695807",
         "checksum": "sha256:19ec8d8b32b14341a6177528d2b2475c587d400b384fc980e04a937aba7e6150",
-        "importedAt": "2026-05-15T16:37:29.981Z",
+        "importedAt": "2026-05-16T00:38:48.701Z",
         "provider": "keep"
       },
       "startTime": "2025-05-12T11:01:33.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:29.981Z"
+      "updatedAt": "2026-05-16T00:38:48.701Z"
     },
     {
       "averageSpeedMps": 6.070420195980734,
@@ -1778,7 +1778,7 @@
         {
           "activityId": "14390689270",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:39:21.100Z",
+          "syncedAt": "2026-05-16T00:40:45.484Z",
           "url": "https://www.strava.com/activities/14390689270"
         }
       ],
@@ -1792,7 +1792,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 6021,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -1820,14 +1820,14 @@
       "source": {
         "activityId": "9223370290354901807",
         "checksum": "sha256:63b49de5140b23d530e61083b3d1ec1c040b9fac0f5f11437b23a4d983a9210a",
-        "importedAt": "2026-05-15T16:37:30.431Z",
+        "importedAt": "2026-05-16T00:38:49.105Z",
         "provider": "keep"
       },
       "startTime": "2025-05-06T00:45:35.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:30.431Z"
+      "updatedAt": "2026-05-16T00:38:49.105Z"
     },
     {
       "averageSpeedMps": 5.7599175682637815,
@@ -1837,7 +1837,7 @@
         {
           "activityId": "14316955777",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:39:24.338Z",
+          "syncedAt": "2026-05-16T00:40:48.989Z",
           "url": "https://www.strava.com/activities/14316955777"
         }
       ],
@@ -1851,7 +1851,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1941,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -1878,15 +1878,15 @@
       },
       "source": {
         "activityId": "9223370291013779807",
-        "checksum": "sha256:d95d737b70246702711d6d86226cc5858c1eaa2250d492abf3f7c3029d033c16",
-        "importedAt": "2026-05-15T16:37:30.839Z",
+        "checksum": "sha256:9b37e9e4efaec4a33182beb7021f5b3563ece27b299607f9980ab8fe185a1006",
+        "importedAt": "2026-05-16T00:38:49.473Z",
         "provider": "keep"
       },
       "startTime": "2025-04-28T11:15:50.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:30.839Z"
+      "updatedAt": "2026-05-16T00:38:49.473Z"
     },
     {
       "averageSpeedMps": 5.883125410374261,
@@ -1896,7 +1896,7 @@
         {
           "activityId": "14309756055",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:39:27.594Z",
+          "syncedAt": "2026-05-16T00:40:52.439Z",
           "url": "https://www.strava.com/activities/14309756055"
         }
       ],
@@ -1910,7 +1910,7 @@
       "maxSpeedMps": 0,
       "movingTimeSeconds": 1523,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -1938,14 +1938,14 @@
       "source": {
         "activityId": "9223370292917191807",
         "checksum": "sha256:f9a2d9bef02cb699238927f1cd7bb899fa8cbe5396b8a3162ccbd4c5b7c2fb31",
-        "importedAt": "2026-05-15T16:37:31.265Z",
+        "importedAt": "2026-05-16T00:38:49.808Z",
         "provider": "keep"
       },
       "startTime": "2025-04-06T10:38:37.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:31.265Z"
+      "updatedAt": "2026-05-16T00:38:49.808Z"
     },
     {
       "averageSpeedMps": 5.947655398037077,
@@ -1955,7 +1955,7 @@
         {
           "activityId": "14309756423",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:39:30.866Z",
+          "syncedAt": "2026-05-16T00:40:55.978Z",
           "url": "https://www.strava.com/activities/14309756423"
         }
       ],
@@ -1969,7 +1969,7 @@
       "maxSpeedMps": 9.744445,
       "movingTimeSeconds": 4585,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -1997,14 +1997,14 @@
       "source": {
         "activityId": "9223370305268833807",
         "checksum": "sha256:24806cd7804a9b54fd08fddfddd18ae134aaa9918931488f49c78a0da95654c5",
-        "importedAt": "2026-05-15T16:37:31.709Z",
+        "importedAt": "2026-05-16T00:38:50.210Z",
         "provider": "keep"
       },
       "startTime": "2024-11-14T10:37:41.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:31.709Z"
+      "updatedAt": "2026-05-16T00:38:50.210Z"
     },
     {
       "averageSpeedMps": 5.305368879698693,
@@ -2014,7 +2014,7 @@
         {
           "activityId": "14309757067",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:39:34.243Z",
+          "syncedAt": "2026-05-16T00:40:59.675Z",
           "url": "https://www.strava.com/activities/14309757067"
         }
       ],
@@ -2028,7 +2028,7 @@
       "maxSpeedMps": 9.5,
       "movingTimeSeconds": 13541,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -2055,15 +2055,15 @@
       },
       "source": {
         "activityId": "9223370308992952807",
-        "checksum": "sha256:186c7776f6f5790ac06372563829ff22e9228f608feb485e0129403d803033bb",
-        "importedAt": "2026-05-15T16:37:32.527Z",
+        "checksum": "sha256:61cf62cc37cbd4d1bc5881ef42f6d80053db0dc7c1197b4551230b4da4f0504d",
+        "importedAt": "2026-05-16T00:38:50.915Z",
         "provider": "keep"
       },
       "startTime": "2024-10-02T04:32:30.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:32.527Z"
+      "updatedAt": "2026-05-16T00:38:50.915Z"
     },
     {
       "averageSpeedMps": 6.272139679341896,
@@ -2073,7 +2073,7 @@
         {
           "activityId": "14309757483",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:39:37.643Z",
+          "syncedAt": "2026-05-16T00:41:03.398Z",
           "url": "https://www.strava.com/activities/14309757483"
         }
       ],
@@ -2087,7 +2087,7 @@
       "maxSpeedMps": 10,
       "movingTimeSeconds": 11913,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -2115,14 +2115,14 @@
       "source": {
         "activityId": "9223370309016064807",
         "checksum": "sha256:de309a18cc0d0675391c97bc6e91a4837931a47e2fa4e287bff7610572b0db57",
-        "importedAt": "2026-05-15T16:37:33.398Z",
+        "importedAt": "2026-05-16T00:38:51.688Z",
         "provider": "keep"
       },
       "startTime": "2024-10-01T22:46:56.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:33.398Z"
+      "updatedAt": "2026-05-16T00:38:51.688Z"
     },
     {
       "averageSpeedMps": 5.616157005933363,
@@ -2132,7 +2132,7 @@
         {
           "activityId": "14309757819",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:39:40.998Z",
+          "syncedAt": "2026-05-16T00:41:07.072Z",
           "url": "https://www.strava.com/activities/14309757819"
         }
       ],
@@ -2146,7 +2146,7 @@
       "maxSpeedMps": 10.222222,
       "movingTimeSeconds": 13146,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -2174,14 +2174,14 @@
       "source": {
         "activityId": "9223370309594194807",
         "checksum": "sha256:ec5b5127b4dcd6e6b95a86b86339c78908b2e8310a92b3aa0b97b3973c66bed1",
-        "importedAt": "2026-05-15T16:37:34.296Z",
+        "importedAt": "2026-05-16T00:38:52.433Z",
         "provider": "keep"
       },
       "startTime": "2024-09-25T06:10:14.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:34.296Z"
+      "updatedAt": "2026-05-16T00:38:52.433Z"
     },
     {
       "averageSpeedMps": 5.986945169712794,
@@ -2191,7 +2191,7 @@
         {
           "activityId": "14309757912",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:39:44.261Z",
+          "syncedAt": "2026-05-16T00:41:10.586Z",
           "url": "https://www.strava.com/activities/14309757912"
         }
       ],
@@ -2205,7 +2205,7 @@
       "maxSpeedMps": 9.733334,
       "movingTimeSeconds": 3830,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -2233,14 +2233,14 @@
       "source": {
         "activityId": "9223370310293142807",
         "checksum": "sha256:9bf771765817931c3e401fed01d8cd8ff8d6471d8f07ec7a23f149ec246c6aba",
-        "importedAt": "2026-05-15T16:37:34.831Z",
+        "importedAt": "2026-05-16T00:38:52.935Z",
         "provider": "keep"
       },
       "startTime": "2024-09-17T07:16:51.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:34.831Z"
+      "updatedAt": "2026-05-16T00:38:52.935Z"
     },
     {
       "averageSpeedMps": 5.8254822790489005,
@@ -2250,7 +2250,7 @@
         {
           "activityId": "14309758190",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:39:47.533Z",
+          "syncedAt": "2026-05-16T00:41:14.204Z",
           "url": "https://www.strava.com/activities/14309758190"
         }
       ],
@@ -2264,7 +2264,7 @@
       "maxSpeedMps": 8.185,
       "movingTimeSeconds": 4458,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -2291,15 +2291,15 @@
       },
       "source": {
         "activityId": "9223370310299139807",
-        "checksum": "sha256:e52c3158e194c3e88b8a6cef949c2f6a31973803c9789553687cef34f030c2b5",
-        "importedAt": "2026-05-15T16:37:35.268Z",
+        "checksum": "sha256:6377247ebf5e0ea26737265181f2dc8778c50ef98a8598586578b19140e50f23",
+        "importedAt": "2026-05-16T00:38:53.336Z",
         "provider": "keep"
       },
       "startTime": "2024-09-17T05:29:34.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:35.268Z"
+      "updatedAt": "2026-05-16T00:38:53.336Z"
     },
     {
       "averageSpeedMps": 4.668623265741729,
@@ -2309,7 +2309,7 @@
         {
           "activityId": "14309758945",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:39:50.931Z",
+          "syncedAt": "2026-05-16T00:41:17.959Z",
           "url": "https://www.strava.com/activities/14309758945"
         }
       ],
@@ -2323,7 +2323,7 @@
       "maxSpeedMps": 11.6,
       "movingTimeSeconds": 18740,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -2351,14 +2351,14 @@
       "source": {
         "activityId": "9223370310556095807",
         "checksum": "sha256:a422189c6300b021d95b4f935546297091997fceb7237169772870babc6f332e",
-        "importedAt": "2026-05-15T16:37:36.331Z",
+        "importedAt": "2026-05-16T00:38:54.279Z",
         "provider": "keep"
       },
       "startTime": "2024-09-13T23:54:57.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:36.331Z"
+      "updatedAt": "2026-05-16T00:38:54.279Z"
     },
     {
       "averageSpeedMps": 4.576411960132891,
@@ -2368,7 +2368,7 @@
         {
           "activityId": "14309758912",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:39:54.248Z",
+          "syncedAt": "2026-05-16T00:41:21.629Z",
           "url": "https://www.strava.com/activities/14309758912"
         }
       ],
@@ -2382,7 +2382,7 @@
       "maxSpeedMps": 6.733333,
       "movingTimeSeconds": 6020,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -2409,15 +2409,15 @@
       },
       "source": {
         "activityId": "9223370311150801807",
-        "checksum": "sha256:59bf4fb0a120110df4e98bc55bc14eb1b7ec3d8cc7b6cda7acddf6f29bf167bb",
-        "importedAt": "2026-05-15T16:37:36.955Z",
+        "checksum": "sha256:104a0f058456454e51275048e11b0891ae50fb23d5ed7e35a84fc9f4d00cdca0",
+        "importedAt": "2026-05-16T00:38:54.877Z",
         "provider": "keep"
       },
       "startTime": "2024-09-07T08:14:43.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:36.955Z"
+      "updatedAt": "2026-05-16T00:38:54.877Z"
     },
     {
       "averageSpeedMps": 4.386873920552677,
@@ -2427,7 +2427,7 @@
         {
           "activityId": "14309758980",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:39:57.486Z",
+          "syncedAt": "2026-05-16T00:41:25.119Z",
           "url": "https://www.strava.com/activities/14309758980"
         }
       ],
@@ -2441,7 +2441,7 @@
       "maxSpeedMps": 7.7,
       "movingTimeSeconds": 579,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -2469,14 +2469,14 @@
       "source": {
         "activityId": "9223370311157909807",
         "checksum": "sha256:14f2634a90b57f6d00b063d66e5d6fcd3fed1a0080a5c1b4ca47777d39a812ce",
-        "importedAt": "2026-05-15T16:37:37.373Z",
+        "importedAt": "2026-05-16T00:38:55.256Z",
         "provider": "keep"
       },
       "startTime": "2024-09-07T07:25:44.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:37.373Z"
+      "updatedAt": "2026-05-16T00:38:55.256Z"
     },
     {
       "averageSpeedMps": 4.149659863945578,
@@ -2486,7 +2486,7 @@
         {
           "activityId": "14309759422",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:40:00.790Z",
+          "syncedAt": "2026-05-16T00:41:28.766Z",
           "url": "https://www.strava.com/activities/14309759422"
         }
       ],
@@ -2500,7 +2500,7 @@
       "maxSpeedMps": 6.814722,
       "movingTimeSeconds": 2793,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -2528,14 +2528,14 @@
       "source": {
         "activityId": "9223370311242401807",
         "checksum": "sha256:0895bad30f57eec8333e16dd80220ffc993a46d9b66741b9beb9aad8ccd00ae7",
-        "importedAt": "2026-05-15T16:37:37.764Z",
+        "importedAt": "2026-05-16T00:38:55.650Z",
         "provider": "keep"
       },
       "startTime": "2024-09-06T07:12:35.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:37.764Z"
+      "updatedAt": "2026-05-16T00:38:55.650Z"
     },
     {
       "averageSpeedMps": 4.214285714285714,
@@ -2545,7 +2545,7 @@
         {
           "activityId": "14309759539",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:40:04.057Z",
+          "syncedAt": "2026-05-16T00:41:32.258Z",
           "url": "https://www.strava.com/activities/14309759539"
         }
       ],
@@ -2559,7 +2559,7 @@
       "maxSpeedMps": 5.473889,
       "movingTimeSeconds": 560,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -2587,14 +2587,14 @@
       "source": {
         "activityId": "9223370311250672807",
         "checksum": "sha256:16a5398a9806ffe95fef906a8889fb043a7d588a7088d372ca5f7c0effa775aa",
-        "importedAt": "2026-05-15T16:37:38.150Z",
+        "importedAt": "2026-05-16T00:38:55.981Z",
         "provider": "keep"
       },
       "startTime": "2024-09-06T06:16:46.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:38.150Z"
+      "updatedAt": "2026-05-16T00:38:55.981Z"
     },
     {
       "averageSpeedMps": 4.4070021881838075,
@@ -2604,7 +2604,7 @@
         {
           "activityId": "14309759861",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:40:07.301Z",
+          "syncedAt": "2026-05-16T00:41:35.761Z",
           "url": "https://www.strava.com/activities/14309759861"
         }
       ],
@@ -2618,7 +2618,7 @@
       "maxSpeedMps": 6.5555553,
       "movingTimeSeconds": 2285,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -2646,14 +2646,14 @@
       "source": {
         "activityId": "9223370313240798807",
         "checksum": "sha256:c98a2a7296bdd964061108a1b8dba4fe7bf39912efd7439de78bc81cb567868e",
-        "importedAt": "2026-05-15T16:37:38.545Z",
+        "importedAt": "2026-05-16T00:38:56.323Z",
         "provider": "keep"
       },
       "startTime": "2024-08-14T05:00:01.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:38.545Z"
+      "updatedAt": "2026-05-16T00:38:56.323Z"
     },
     {
       "averageSpeedMps": 3.5193992490613266,
@@ -2663,7 +2663,7 @@
         {
           "activityId": "14309760155",
           "provider": "strava",
-          "syncedAt": "2026-05-15T16:40:10.562Z",
+          "syncedAt": "2026-05-16T00:41:39.319Z",
           "url": "https://www.strava.com/activities/14309760155"
         }
       ],
@@ -2677,7 +2677,7 @@
       "maxSpeedMps": 8.666667,
       "movingTimeSeconds": 3995,
       "privacy": {
-        "appliedAt": "2026-05-15T16:40:10.823Z",
+        "appliedAt": "2026-05-16T00:41:39.604Z",
         "hideRoute": false,
         "visibility": "public"
       },
@@ -2704,15 +2704,15 @@
       },
       "source": {
         "activityId": "9223370314891557807",
-        "checksum": "sha256:5727cfce5d6b848112efc21e7df3e7f90d5706e20025e60fc23f8f32c77436e9",
-        "importedAt": "2026-05-15T16:37:38.966Z",
+        "checksum": "sha256:f7d69ef4b60afc13ff237ad222e134ad5d5b9d58c51690ee407648d6d2826d89",
+        "importedAt": "2026-05-16T00:38:56.894Z",
         "provider": "keep"
       },
       "startTime": "2024-07-26T01:55:26.000Z",
       "timezone": "Asia/Shanghai",
       "title": "Ride from Keep",
       "type": "cycling",
-      "updatedAt": "2026-05-15T16:37:38.966Z"
+      "updatedAt": "2026-05-16T00:38:56.894Z"
     }
   ],
   "version": 1
