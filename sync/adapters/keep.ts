@@ -64,6 +64,44 @@ const keepLogResponseSchema = z.object({
     .passthrough(),
 })
 
+function getLocalHour(timestamp: number, timezone?: string): number {
+  const date = new Date(timestamp)
+  if (timezone && timezone !== "UTC") {
+    try {
+      const hour = Number(
+        new Intl.DateTimeFormat("en-US", {
+          hour: "numeric",
+          hourCycle: "h23",
+          timeZone: timezone,
+        }).format(date)
+      )
+      if (!Number.isNaN(hour)) return hour
+    } catch {
+      // fallback to UTC hour
+    }
+  }
+  return date.getUTCHours()
+}
+
+function timeOfDayLabel(hour: number): string {
+  if (hour >= 5 && hour < 12) return "Morning Ride"
+  if (hour >= 12 && hour < 17) return "Afternoon Ride"
+  if (hour >= 17 && hour < 21) return "Evening Ride"
+  return "Night Ride"
+}
+
+function generateDefaultTitle(
+  startTime: number,
+  timezone: string | undefined,
+  city: string | undefined
+): string {
+  if (city) {
+    return `Ride in ${city}`
+  }
+  const hour = getLocalHour(startTime, timezone)
+  return timeOfDayLabel(hour)
+}
+
 const keepGeoPointSchema = z
   .object({
     longitude: z.number(),
@@ -187,7 +225,13 @@ export function normalizeKeepLog(
   const activity: RideActivity = {
     id,
     type: "cycling",
-    title: stringifyKeepValue(parsed.name) || "Ride from Keep",
+    title:
+      stringifyKeepValue(parsed.name) ||
+      generateDefaultTitle(
+        parsed.startTime,
+        stringifyKeepValue(parsed.timezone),
+        stringifyKeepValue(parsed.city)
+      ),
     startTime,
     endTime,
     timezone: stringifyKeepValue(parsed.timezone),

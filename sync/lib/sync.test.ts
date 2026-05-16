@@ -84,6 +84,38 @@ describe("Keep route decoding", () => {
     })
   })
 
+  test("falls back to city-based title when Keep name is missing", () => {
+    const payload = keepPayload("outdoorCycling")
+    payload.data.name = ""
+    payload.data.city = { name: "Shanghai" }
+
+    const activity = normalizeKeepLog(payload, "2026-05-10T00:00:00.000Z")
+
+    expect(activity?.title).toBe("Ride in Shanghai")
+  })
+
+  test("falls back to time-based title when Keep name and city are missing", () => {
+    const payload = keepPayload("outdoorCycling")
+    payload.data.name = ""
+    payload.data.city = ""
+    payload.data.startTime = Date.parse("2026-05-10T08:00:00.000Z")
+
+    const activity = normalizeKeepLog(payload, "2026-05-10T00:00:00.000Z")
+
+    expect(activity?.title).toBe("Morning Ride")
+  })
+
+  test("falls back to Night Ride for late hours", () => {
+    const payload = keepPayload("outdoorCycling")
+    payload.data.name = ""
+    payload.data.city = ""
+    payload.data.startTime = Date.parse("2026-05-10T23:00:00.000Z")
+
+    const activity = normalizeKeepLog(payload, "2026-05-10T00:00:00.000Z")
+
+    expect(activity?.title).toBe("Night Ride")
+  })
+
   test("skips null Keep list stats rows", () => {
     expect(
       extractCyclingIdsFromListResponse({

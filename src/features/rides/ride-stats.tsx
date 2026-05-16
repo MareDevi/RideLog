@@ -28,14 +28,14 @@ export function RideStats({ summary }: { summary: RideSummary }) {
   ]
 
   return (
-    <div className="grid grid-cols-3 gap-2">
+    <div className="grid grid-cols-3 gap-1.5 sm:gap-2">
       {stats.map((stat) => (
         <Card key={stat.label} className="rounded-md">
           <CardContent className="p-3">
             <div className="mb-2 text-muted-foreground">
               <HugeiconsIcon icon={stat.icon} size={18} />
             </div>
-            <div className="truncate text-lg font-semibold">{stat.value}</div>
+            <div className="truncate text-base font-semibold sm:text-lg">{stat.value}</div>
             <div className="text-xs text-muted-foreground">{stat.label}</div>
           </CardContent>
         </Card>

@@ -46,7 +46,7 @@ export function Dashboard() {
 
   return (
     <main className="min-h-svh bg-background text-foreground lg:h-svh lg:overflow-hidden">
-      <div className="grid min-h-svh w-full gap-4 p-4 lg:h-full lg:min-h-0 lg:grid-cols-[360px_minmax(0,1fr)] xl:grid-cols-[360px_minmax(0,1fr)_360px]">
+      <div className="grid min-h-svh w-full gap-4 p-4 pb-[calc(1rem+env(safe-area-inset-bottom,0px))] lg:h-full lg:min-h-0 lg:grid-cols-[360px_minmax(0,1fr)] xl:grid-cols-[360px_minmax(0,1fr)_360px]">
         <aside className="flex min-w-0 flex-col gap-4 lg:min-h-0">
           <div className="flex items-start justify-between gap-3">
             <div>
@@ -67,7 +67,7 @@ export function Dashboard() {
           <RideStats summary={summary} />
           <RideList
             activities={filtered}
-            className="max-h-[52svh] lg:max-h-none"
+            className="max-h-[45svh] lg:max-h-none"
             query={query}
             selectedId={selected?.id}
             onQueryChange={setQuery}
@@ -78,7 +78,7 @@ export function Dashboard() {
           />
         </aside>
 
-        <section className="relative flex h-[55svh] min-h-[360px] min-w-0 flex-col gap-2 lg:h-full lg:min-h-0">
+        <section className="relative flex h-[42svh] min-h-[320px] min-w-0 flex-col gap-2 sm:h-[50svh] sm:min-h-[360px] lg:h-full lg:min-h-0">
           <div className="absolute left-3 top-3 z-10 flex items-center gap-1 rounded-md border bg-background/80 p-1 shadow-sm backdrop-blur">
             <Button
               variant="ghost"
@@ -112,7 +112,7 @@ export function Dashboard() {
           )}
         </section>
 
-        <section className="min-w-0 overflow-auto scrollbar-dark lg:min-h-0">
+        <section className="min-w-0 overflow-auto scrollbar-dark max-h-[60svh] lg:min-h-0 lg:max-h-none">
           <RideDetail
             activity={selected}
             status={loadState.status}
