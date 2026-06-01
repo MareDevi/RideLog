@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-01T12:04:05.056Z",
+  "generatedAt": "2026-06-01T18:06:33.877Z",
   "sync": {
     "destination": "strava",
-    "lastImportedAt": "2026-06-01T12:01:07.783Z",
-    "lastSyncedAt": "2026-06-01T12:04:04.781Z",
+    "lastImportedAt": "2026-06-01T18:03:47.332Z",
+    "lastSyncedAt": "2026-06-01T18:06:33.585Z",
     "routePrivacy": {
       "hideRoutes": false,
       "trimEndMeters": 0,
